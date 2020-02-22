@@ -49,7 +49,7 @@ class TodosController extends Controller
         $todo->due = $request->input('due');
         $todo->save();
 
-        return redirect('index')->with('success', 'has sent successfully.');
+        return redirect('/')->with('success', 'has sent successfully.');
     }
 
     /**
